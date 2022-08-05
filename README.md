@@ -40,7 +40,7 @@ return currentSeasonsArray;
 
 <hr/>
 
-**If you want the API is available [here](get-current-season-with-date/modules.md)**
+**If you want the API is available [here](docs/modules.md)**
 
 <br/>
 

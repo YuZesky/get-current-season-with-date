@@ -75,7 +75,7 @@ export function getCurrentSeasonsArray(date?: Date): number[] {
  * @see https://stackoverflow.com/a/5671172
  * @param {Array?} seasonsArray A seasons array
  * @param {GetSeasonByIdOptions?} options Options
- * @returns {localizedSeason?} Localized current season
+ * @returns {localizedSeason} Localized current season
  */
 export function getSeasonByArray(seasonsArray?: number[], options?: GetSeasonByIdOptions): localizedSeason {
 	var currentDate = new Date() as unknown;

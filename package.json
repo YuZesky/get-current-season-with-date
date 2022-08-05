@@ -1,6 +1,6 @@
 {
   "name": "get-current-season-with-date",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the current season in the part of the globe where is a specified date",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
