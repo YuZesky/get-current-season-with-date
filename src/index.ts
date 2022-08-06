@@ -141,6 +141,6 @@ export interface GetSeasonByIdOptions {
 	// Ensure that the first letter is in capital letters or lowercase. Default is false
 	lowercaseSeason: boolean;
 
-	// Default is `en_us`
+	// Change the locale using ISO 639-2 code. Default is `eng`
 	locale: string | object;
 }
