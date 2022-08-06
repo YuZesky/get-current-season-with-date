@@ -91,7 +91,7 @@ return currentSeason;
 //> a, b, c or d
 ```
 
-Last thing, adding the parameter `lowercaseSeason` to the options, you can choose with `true` or `false` if you want the first letter of the season to be uppercase or lowercase
+Last thing, adding the parameter `lowercaseSeason` to the options, you can choose with `true` or `false` if you want the first letter of the season to be uppercase or lowercase. Default is false
 
 **If you want the API is available [here](docs/modules.md)**
 
