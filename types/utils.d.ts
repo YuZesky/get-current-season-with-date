@@ -28,4 +28,10 @@ export declare function degRad(x: number): number;
  * @returns {number}
  */
 export declare function degCos(x: number): number;
+/**
+ * Get the JSON locale file
+ * @param {string} locale Locale
+ * @returns {Object} JSON
+ */
+export declare function getLocaleFile(locale: string): Object;
 //# sourceMappingURL=utils.d.ts.map

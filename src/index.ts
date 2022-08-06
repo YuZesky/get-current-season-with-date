@@ -1,4 +1,6 @@
-import { dateFromJulianArray, degCos } from './utils';
+import mergeObjects from 'merge-objects';
+import ucfirst from 'ucfirst-js';
+import { dateFromJulianArray, degCos, getLocaleFile } from './utils';
 
 /**
  * Get the current seasons array
@@ -72,12 +74,11 @@ export function getCurrentSeasonsArray(date?: Date): number[] {
 /**
  * Get the current season with the seasons array
  * @author apaul
- * @see https://stackoverflow.com/a/5671172
+ * @see http://jsfiddle.net/kynbvpLf/3/
  * @param {Array?} seasonsArray A seasons array
- * @param {GetSeasonByIdOptions?} options Options
  * @returns {localizedSeason} Localized current season
  */
-export function getSeasonByArray(seasonsArray?: number[], options?: GetSeasonByIdOptions): localizedSeason {
+export function getCurrentSeasonIdByArray(seasonsArray?: number[]): number {
 	var currentDate = new Date() as unknown;
 	var seasonsArray = seasonsArray || getCurrentSeasonsArray();
 
@@ -87,20 +88,59 @@ export function getSeasonByArray(seasonsArray?: number[], options?: GetSeasonByI
 	var firstWinter = seasonsArray[4];
 
 	if (currentDate >= firstSpring && currentDate < firstSummer) {
-		return 'spring';
+		return 1;
 	} else if (currentDate >= firstSummer && currentDate < firstFall) {
-		return 'summer';
+		return 2;
 	} else if (currentDate >= firstFall && currentDate < firstWinter) {
-		return 'fall';
+		return 3;
 	} else if (currentDate >= firstWinter || currentDate < firstSpring) {
-		return 'winter';
+		return 4;
+	}
+}
+
+/**
+ * Get the localized season by id
+ * @param {number} seasonId A season Id
+ * @param {GetSeasonByIdOptions} options Options
+ * @returns {string} Localized season
+ */
+export function getSeasonById(seasonId: number, options?: GetSeasonByIdOptions): string {
+	let defaultLocale = getLocaleFile('en_us');
+	let locale, lowercaseSeason;
+
+	if (options !== undefined) {
+		if (options.locale !== undefined) {
+			if (typeof options.locale === 'string') locale = getLocaleFile(options.locale);
+			if (typeof options.locale === 'object') locale = mergeObjects(defaultLocale, options.locale);
+		} else {
+			locale = defaultLocale;
+		}
+
+		if (options.lowercaseSeason !== undefined) {
+			lowercaseSeason = options.lowercaseSeason;
+		} else {
+			lowercaseSeason = false;
+		}
+	} else {
+		locale = defaultLocale;
+		lowercaseSeason = false;
+	}
+
+	let currentSeason = locale[seasonId];
+
+	if (lowercaseSeason == true) {
+		return currentSeason.toLowerCase();
+	} else {
+		return ucfirst(currentSeason);
 	}
 }
 
 export * from './utils';
 
-export type localizedSeason = 'spring' | 'summer' | 'fall' | 'winter';
-
 export interface GetSeasonByIdOptions {
-	locales: Object;
+	// Ensure that the first letter is in capital letters or lowercase. Default is false
+	lowercaseSeason: boolean;
+
+	// Default is `en_us`
+	locale: string | object;
 }

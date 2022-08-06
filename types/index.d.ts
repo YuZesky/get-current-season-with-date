@@ -9,15 +9,21 @@ export declare function getCurrentSeasonsArray(date?: Date): number[];
 /**
  * Get the current season with the seasons array
  * @author apaul
- * @see https://stackoverflow.com/a/5671172
+ * @see http://jsfiddle.net/kynbvpLf/3/
  * @param {Array?} seasonsArray A seasons array
- * @param {GetSeasonByIdOptions?} options Options
- * @returns {localizedSeason?} Localized current season
+ * @returns {localizedSeason} Localized current season
  */
-export declare function getSeasonByArray(seasonsArray?: number[], options?: GetSeasonByIdOptions): localizedSeason;
+export declare function getCurrentSeasonIdByArray(seasonsArray?: number[]): number;
+/**
+ * Get the localized season by id
+ * @param {number} seasonId A season Id
+ * @param {GetSeasonByIdOptions} options Options
+ * @returns {string} Localized season
+ */
+export declare function getSeasonById(seasonId: number, options?: GetSeasonByIdOptions): string;
 export * from './utils';
-export declare type localizedSeason = 'spring' | 'summer' | 'fall' | 'winter';
 export interface GetSeasonByIdOptions {
-    locales: Object;
+    lowercaseSeason: boolean;
+    locale: string | object;
 }
 //# sourceMappingURL=index.d.ts.map

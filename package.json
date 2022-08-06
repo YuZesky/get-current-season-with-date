@@ -1,6 +1,6 @@
 {
   "name": "get-current-season-with-date",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Get the current season in the part of the globe where is a specified date",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
@@ -24,6 +24,10 @@
     "url": "https://github.com/YuZesky/get-current-season-with-date/issues"
   },
   "homepage": "https://github.com/YuZesky/get-current-season-with-date#readme",
+  "dependencies": {
+    "merge-objects": "^1.0.5",
+    "ucfirst-js": "^0.0.0"
+  },
   "devDependencies": {
     "@sapphire/prettier-config": "^1.4.3",
     "@types/node": "^18.6.4",

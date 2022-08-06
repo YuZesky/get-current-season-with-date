@@ -6,14 +6,25 @@
 
 ### Properties
 
-- [locales](GetSeasonByIdOptions.md#locales)
+- [locale](GetSeasonByIdOptions.md#locale)
+- [lowercaseSeason](GetSeasonByIdOptions.md#lowercaseseason)
 
 ## Properties
 
-### locales
+### locale
 
-• **locales**: `Object`
+• **locale**: `string` \| `object`
 
 #### Defined in
 
-index.ts:105
+[index.ts:145](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/index.ts#L145)
+
+___
+
+### lowercaseSeason
+
+• **lowercaseSeason**: `boolean`
+
+#### Defined in
+
+[index.ts:142](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/index.ts#L142)

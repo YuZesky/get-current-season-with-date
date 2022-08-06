@@ -8,28 +8,16 @@
 
 - [GetSeasonByIdOptions](interfaces/GetSeasonByIdOptions.md)
 
-### Type Aliases
-
-- [localizedSeason](modules.md#localizedseason)
-
 ### Functions
 
 - [createJulianArray](modules.md#createjulianarray)
 - [dateFromJulianArray](modules.md#datefromjulianarray)
 - [degCos](modules.md#degcos)
 - [degRad](modules.md#degrad)
+- [getCurrentSeasonIdByArray](modules.md#getcurrentseasonidbyarray)
 - [getCurrentSeasonsArray](modules.md#getcurrentseasonsarray)
-- [getSeasonByArray](modules.md#getseasonbyarray)
-
-## Type Aliases
-
-### localizedSeason
-
-Ƭ **localizedSeason**: ``"spring"`` \| ``"summer"`` \| ``"fall"`` \| ``"winter"``
-
-#### Defined in
-
-index.ts:102
+- [getLocaleFile](modules.md#getlocalefile)
+- [getSeasonById](modules.md#getseasonbyid)
 
 ## Functions
 
@@ -58,7 +46,7 @@ https://stackoverflow.com/a/5671172
 
 #### Defined in
 
-utils.ts:8
+[utils.ts:11](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L11)
 
 ___
 
@@ -88,7 +76,7 @@ https://stackoverflow.com/a/5671172
 
 #### Defined in
 
-utils.ts:46
+[utils.ts:49](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L49)
 
 ___
 
@@ -116,7 +104,7 @@ https://stackoverflow.com/a/5671172
 
 #### Defined in
 
-utils.ts:70
+[utils.ts:73](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L73)
 
 ___
 
@@ -144,7 +132,39 @@ https://stackoverflow.com/a/5671172
 
 #### Defined in
 
-utils.ts:60
+[utils.ts:63](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L63)
+
+___
+
+### getCurrentSeasonIdByArray
+
+▸ **getCurrentSeasonIdByArray**(`seasonsArray?`): `number`
+
+Get the current season with the seasons array
+
+**`Author`**
+
+apaul
+
+**`See`**
+
+http://jsfiddle.net/kynbvpLf/3/
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `seasonsArray?` | `number`[] | A seasons array |
+
+#### Returns
+
+`number`
+
+Localized current season
+
+#### Defined in
+
+[index.ts:81](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/index.ts#L81)
 
 ___
 
@@ -176,37 +196,53 @@ Seasons array
 
 #### Defined in
 
-index.ts:10
+[index.ts:12](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/index.ts#L12)
 
 ___
 
-### getSeasonByArray
+### getLocaleFile
 
-▸ **getSeasonByArray**(`seasonsArray?`, `options?`): [`localizedSeason`](modules.md#localizedseason)
+▸ **getLocaleFile**(`locale`): `Object`
 
-Get the current season with the seasons array
-
-**`Author`**
-
-apaul
-
-**`See`**
-
-https://stackoverflow.com/a/5671172
+Get the JSON locale file
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `seasonsArray?` | `number`[] | A seasons array |
+| `locale` | `string` | Locale |
+
+#### Returns
+
+`Object`
+
+JSON
+
+#### Defined in
+
+[utils.ts:82](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L82)
+
+___
+
+### getSeasonById
+
+▸ **getSeasonById**(`seasonId`, `options?`): `string`
+
+Get the localized season by id
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `seasonId` | `number` | A season Id |
 | `options?` | [`GetSeasonByIdOptions`](interfaces/GetSeasonByIdOptions.md) | Options |
 
 #### Returns
 
-[`localizedSeason`](modules.md#localizedseason)
+`string`
 
-Localized current season
+Localized season
 
 #### Defined in
 
-index.ts:80
+[index.ts:107](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/index.ts#L107)

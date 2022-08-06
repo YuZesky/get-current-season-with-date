@@ -3,10 +3,16 @@ lockfileVersion: 5.4
 specifiers:
   '@sapphire/prettier-config': ^1.4.3
   '@types/node': ^18.6.4
+  merge-objects: ^1.0.5
   prettier: ^2.7.1
   typedoc: ^0.23.10
   typedoc-plugin-markdown: ^3.13.4
   typescript: ^4.7.4
+  ucfirst-js: ^0.0.0
+
+dependencies:
+  merge-objects: 1.0.5
+  ucfirst-js: 0.0.0
 
 devDependencies:
   '@sapphire/prettier-config': 1.4.3
@@ -65,6 +71,10 @@ packages:
     engines: {node: '>= 12'}
     hasBin: true
     dev: true
+
+  /merge-objects/1.0.5:
+    resolution: {integrity: sha512-BnNf1kabTxszxVQ7z8if5XmXXDo/W3LLrT1urBEkb3gEjRE/3XwMcf9jIcrxR9HVvYIvYY9p9ldNnYUDamGGCg==}
+    dev: false
 
   /minimatch/5.1.0:
     resolution: {integrity: sha512-9TPBGGak4nHfGZsPBohm9AWg6NoT7QTCehS3BIJABslyZbzxfV78QM2Y6+i741OPZIafFAaiiEMh5OyIrJPgtg==}
@@ -128,6 +138,10 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
+
+  /ucfirst-js/0.0.0:
+    resolution: {integrity: sha512-8YSiUPTnleVp2yx1g02ocC+WCS6U/3TimRnxzeGSmp+Er8u+0qo2SvEREdul93B2BbmSE3paILzKN+inRCm39w==}
+    dev: false
 
   /uglify-js/3.16.3:
     resolution: {integrity: sha512-uVbFqx9vvLhQg0iBaau9Z75AxWJ8tqM9AV890dIZCLApF4rTcyHwmAvLeEdYRs+BzYWu8Iw81F79ah0EfTXbaw==}
