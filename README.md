@@ -1,7 +1,7 @@
 <div align="center">
 
 # get-current-season-with-date
-Get the current season in the part of the globe where is a specified date using [kennebec](https://stackoverflow.com/a/5671172)'s code
+A **lightweight** module to get the current season in the part of the globe where is a specified date using [kennebec](https://stackoverflow.com/a/5671172)'s code ⏲️🌍
 
 ![Version badge](https://img.shields.io/github/package-json/v/YuZesky/get-current-season-with-date?style=flat-square) ![License badge](https://img.shields.io/github/license/YuZesky/get-current-season-with-date?style=flat-square) ![Top language badge](https://img.shields.io/github/languages/top/YuZesky/get-current-season-with-date?style=flat-square) ![NPM minified size](https://img.shields.io/bundlephobia/min/get-current-season-with-date?style=flat-square)
 
