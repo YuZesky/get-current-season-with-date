@@ -23,7 +23,7 @@ export declare function getCurrentSeasonIdByArray(seasonsArray?: number[]): numb
 export declare function getSeasonById(seasonId: number, options?: GetSeasonByIdOptions): string;
 export * from './utils';
 export interface GetSeasonByIdOptions {
-    lowercaseSeason: boolean;
-    locale: string | object;
+    lowercaseSeason?: boolean;
+    locale?: string | object;
 }
 //# sourceMappingURL=index.d.ts.map

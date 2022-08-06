@@ -52,7 +52,7 @@ let currentSeasonId = getCurrentSeasonIdByArray();
 let currentSeason = getSeasonById(currentSeasonId);
 
 return currentSeason;
-//> spring, summer, fall or winter
+//> Spring, Summer, Fall or Winter
 ```
 
 ### Internationalization 🌍
@@ -73,7 +73,7 @@ let currentSeason = getSeasonById(currentSeasonId, {
 });
 
 return currentSeason;
-//> printemps, été, automne or hiver
+//> Printemps, Été, Automne or Hiver
 ```
 
 You can also put personalized locales like this
@@ -92,12 +92,37 @@ let currentSeason = getSeasonById(currentSeasonId, {
 });
 
 return currentSeason;
-//> a, b, c or d
+//> A, B, C or D
 ```
 
 Last thing, adding the parameter `lowercaseSeason` to the options, you can choose with `true` or `false` if you want the first letter of the season to be uppercase or lowercase. Default is false
 
 **If you want the API is available [here](docs/modules.md)**
+
+### Development 🛠️
+If you want to modify something in the module you must first clone it
+
+```
+$ git clone https://github.com/YuZesky/get-current-season-with-date.git
+```
+
+Next download all the necessary dependencies
+
+```
+$ pnpm install
+```
+
+When you have changed the code, format it and launch the tests (It can that if you add functions you will also have to add them in the tests)
+
+```
+$ pnpm run format && pnpm run test
+```
+
+When everything is good, you can compile the code and the documentary
+
+```
+$ pnpm run build && pnpm run doc
+```
 
 <hr/>
 

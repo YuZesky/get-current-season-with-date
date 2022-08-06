@@ -46,7 +46,7 @@ https://stackoverflow.com/a/5671172
 
 #### Defined in
 
-[utils.ts:11](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L11)
+[utils.ts:11](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/utils.ts#L11)
 
 ___
 
@@ -76,7 +76,7 @@ https://stackoverflow.com/a/5671172
 
 #### Defined in
 
-[utils.ts:49](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L49)
+[utils.ts:49](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/utils.ts#L49)
 
 ___
 
@@ -104,7 +104,7 @@ https://stackoverflow.com/a/5671172
 
 #### Defined in
 
-[utils.ts:73](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L73)
+[utils.ts:73](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/utils.ts#L73)
 
 ___
 
@@ -132,7 +132,7 @@ https://stackoverflow.com/a/5671172
 
 #### Defined in
 
-[utils.ts:63](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L63)
+[utils.ts:63](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/utils.ts#L63)
 
 ___
 
@@ -164,7 +164,7 @@ Localized current season
 
 #### Defined in
 
-[index.ts:81](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/index.ts#L81)
+[index.ts:81](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/index.ts#L81)
 
 ___
 
@@ -196,7 +196,7 @@ Seasons array
 
 #### Defined in
 
-[index.ts:12](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/index.ts#L12)
+[index.ts:12](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/index.ts#L12)
 
 ___
 
@@ -220,7 +220,7 @@ JSON
 
 #### Defined in
 
-[utils.ts:82](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/utils.ts#L82)
+[utils.ts:82](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/utils.ts#L82)
 
 ___
 
@@ -245,4 +245,4 @@ Localized season
 
 #### Defined in
 
-[index.ts:107](https://github.com/YuZesky/get-current-season-with-date/blob/a295ea5/src/index.ts#L107)
+[index.ts:107](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/index.ts#L107)
