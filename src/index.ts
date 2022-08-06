@@ -105,7 +105,7 @@ export function getCurrentSeasonIdByArray(seasonsArray?: number[]): number {
  * @returns {string} Localized season
  */
 export function getSeasonById(seasonId: number, options?: GetSeasonByIdOptions): string {
-	let defaultLocale = getLocaleFile('en_us');
+	let defaultLocale = getLocaleFile('eng');
 	let locale, lowercaseSeason;
 
 	if (options !== undefined) {
