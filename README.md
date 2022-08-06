@@ -39,7 +39,7 @@ import { getCurrentSeasonIdByArray } from 'get-current-season-with-date';
 
 let currentSeasonId = getCurrentSeasonIdByArray();
 
-return currentSeason;
+return currentSeasonId;
 //> 1, 2, 3 or 4
 ```
 
@@ -62,7 +62,7 @@ If you want to change the locale, add the parameter `locale` to the option using
 
 Currently, `ara` (Arabic), `bul` (Bulgarian), `dan` (Danish), `deu` (German), `eng` (English), `fra` (French), `heb` (Hebrew), `ita` (Italian), `jpn` (Japanese), `rus` (Russian) and `spa` (Spanish) are available. Other languages ​​will be added in time
 
-*If there are translation problems, I invite you to create a request on the [github](https://github.com/YuZesky/get-current-season-with-date) to change them or to add them*
+***If there are translation problems, I invite you to create a request on the [github](https://github.com/YuZesky/get-current-season-with-date) to change them or to add them***
 
 ```typescript
 import { getCurrentSeasonIdByArray, getSeasonById } from 'get-current-season-with-date';
