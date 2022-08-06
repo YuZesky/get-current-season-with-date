@@ -93,10 +93,8 @@ return currentSeason;
 
 Last thing, adding the parameter `lowercaseSeason` to the options, you can choose with `true` or `false` if you want the first letter of the season to be uppercase or lowercase
 
-<hr/>
-
 **If you want the API is available [here](docs/modules.md)**
 
-<br/>
+<hr/>
 
 > MIT © 2022 YuZesky <<yuri.delzesky@gmail.com>>
