@@ -56,27 +56,7 @@ return currentSeason;
 ```
 
 ### Internationalization 🌍
-You can change the language of the output season with the premade locales or do them by yourself
-
-If you want to change the locale, add the parameter `locale` to the option using ISO 639-2 code. Default is `eng` (English) 
-
-Currently, `ara` (Arabic), `bul` (Bulgarian), `dan` (Danish), `deu` (German), `eng` (English), `fra` (French), `heb` (Hebrew), `ita` (Italian), `jpn` (Japanese), `rus` (Russian) and `spa` (Spanish) are available. Other languages ​​will be added in time
-
-***If there are translation problems, I invite you to create a request on the [github](https://github.com/YuZesky/get-current-season-with-date) to change them or to add them***
-
-```typescript
-import { getCurrentSeasonIdByArray, getSeasonById } from 'get-current-season-with-date';
-
-let currentSeasonId = getCurrentSeasonIdByArray();
-let currentSeason = getSeasonById(currentSeasonId, {
-    locale: 'fra'
-});
-
-return currentSeason;
-//> Printemps, Été, Automne or Hiver
-```
-
-You can also put personalized locales like this
+You can change the language of the output season with the locales made by yourself
 
 ```typescript
 import { getCurrentSeasonIdByArray, getSeasonById } from 'get-current-season-with-date';

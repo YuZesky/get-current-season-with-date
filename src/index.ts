@@ -1,6 +1,6 @@
 import mergeObjects from 'merge-objects';
 import ucfirst from 'ucfirst-js';
-import { dateFromJulianArray, degCos, getLocaleFile } from './utils';
+import { dateFromJulianArray, degCos } from './utils';
 
 /**
  * Get the current seasons array
@@ -105,12 +105,17 @@ export function getCurrentSeasonIdByArray(seasonsArray?: number[]): number {
  * @returns {string} Localized season
  */
 export function getSeasonById(seasonId: number, options?: GetSeasonByIdOptions): string {
-	let defaultLocale = getLocaleFile('eng');
+	let defaultLocale = {
+		1: 'spring',
+		2: 'summer',
+		3: 'fall',
+		4: 'winter'
+	};
+
 	let locale, lowercaseSeason;
 
 	if (options !== undefined) {
 		if (options.locale !== undefined) {
-			if (typeof options.locale === 'string') locale = getLocaleFile(options.locale);
 			if (typeof options.locale === 'object') locale = mergeObjects(defaultLocale, options.locale);
 		} else {
 			locale = defaultLocale;

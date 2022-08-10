@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[index.ts:145](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/index.ts#L145)
+[index.ts:150](https://github.com/YuZesky/get-current-season-with-date/blob/f13bbf7/src/index.ts#L150)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[index.ts:142](https://github.com/YuZesky/get-current-season-with-date/blob/99fcdb8/src/index.ts#L142)
+[index.ts:147](https://github.com/YuZesky/get-current-season-with-date/blob/f13bbf7/src/index.ts#L147)

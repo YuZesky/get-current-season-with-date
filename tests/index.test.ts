@@ -27,25 +27,3 @@ describe('test getCurrentSeasonsArray function', () => {
 		]);
 	});
 });
-
-describe('test getSeasonById function', () => {
-	it("should return 'automne' for 3 with french (with upper)", () => {
-		expect(getSeasonById(3, { locale: 'fra' })).toStrictEqual('Automne');
-	});
-
-	it("should return 'invierno' for 4 with spanish (with upper)", () => {
-		expect(getSeasonById(4, { locale: 'spa' })).toStrictEqual('Invierno');
-	});
-
-	it("should return 'estate' for 2 with italian (with lower)", () => {
-		expect(getSeasonById(2, { locale: 'ita', lowercaseSeason: true })).toStrictEqual('estate');
-	});
-
-	it("should return 'spring' for 1 with english (with lower)", () => {
-		expect(getSeasonById(1, { locale: 'eng', lowercaseSeason: true })).toStrictEqual('spring');
-	});
-
-	it("should return 'A' for 3 with custom locales", () => {
-		expect(getSeasonById(3, { locale: { 3: 'a' } })).toStrictEqual('A');
-	});
-});

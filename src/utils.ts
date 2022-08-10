@@ -73,16 +73,3 @@ export function degRad(x: number) {
 export function degCos(x: number) {
 	return Math.cos(degRad(x));
 }
-
-/**
- * Get the JSON locale file
- * @param {string} locale Locale
- * @returns {Object} JSON
- */
-export function getLocaleFile(locale: string): Object {
-	try {
-		return JSON.parse(readFileSync(resolvePath(__dirname, 'locales', `${locale}.json`), { encoding: 'utf-8' }));
-	} catch (e) {
-		throw new Error(`Locale ${locale} was not found`);
-	}
-}
