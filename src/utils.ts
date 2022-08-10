@@ -1,6 +1,3 @@
-import { resolve as resolvePath } from 'path';
-import { readFileSync } from 'fs';
-
 /**
  * @author kennebec
  * @see https://stackoverflow.com/a/5671172
