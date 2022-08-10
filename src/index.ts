@@ -147,5 +147,5 @@ export interface GetSeasonByIdOptions {
 	lowercaseSeason?: boolean;
 
 	// Change the locale using ISO 639-2 code. Default is `eng`
-	locale?: string | object;
+	locale?: object;
 }
