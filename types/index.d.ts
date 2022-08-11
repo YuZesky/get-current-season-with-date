@@ -24,6 +24,6 @@ export declare function getSeasonById(seasonId: number, options?: GetSeasonByIdO
 export * from './utils';
 export interface GetSeasonByIdOptions {
     lowercaseSeason?: boolean;
-    locale?: string | object;
+    locale?: object;
 }
 //# sourceMappingURL=index.d.ts.map
